@@ -47,6 +47,7 @@ jobs:
         run: |
           echo $CONDA/bin >> $GITHUB_PATH
           echo "PDK_ROOT=$CONDA/share/pdk" >> $GITHUB_ENV
+          echo "PDK=gf180mcuC >> $GITHUB_ENV
 
       - name: test tools
         run: |
