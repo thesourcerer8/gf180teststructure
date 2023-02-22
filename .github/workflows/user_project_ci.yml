@@ -90,6 +90,10 @@ jobs:
         run: |
           make set_user_id
           make gpio_defaults
+          sed -i -e "s@\$PDK_ROOT/\$PDK@$PDK_ROOT/$PDK@g" mag/*.mag
+          sed -i -e "s@\$PDKPATH@$PDK_ROOT/$PDK@g" mag/*.mag
+          sed -i -e "s@\$PDK_ROOT/\$PDK@$PDK_ROOT/$PDK@g" caravel/mag/*.mag
+          sed -i -e "s@\$PDKPATH@$PDK_ROOT/$PDK@g" caravel/mag/*.mag
           make ship
 
       - name: archive caravel tapeout
