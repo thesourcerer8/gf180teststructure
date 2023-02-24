@@ -29,6 +29,12 @@
  *-------------------------------------------------------------
  */
 
+module gf180_teststructures #(
+)(
+);
+
+endmodule
+
 module user_project_wrapper #(
     parameter BITS = 32
 )(
@@ -105,6 +111,9 @@ user_proj_example mprj (
     // IRQ
     .irq(user_irq)
 );
+
+
+gf180_teststructures myteststructures ();
 
 endmodule	// user_project_wrapper
 
