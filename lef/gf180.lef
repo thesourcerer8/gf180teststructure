@@ -1,0 +1,29 @@
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO gf180_teststructures
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  #FOREIGN gf180mcu_osu_sc_9T_addf_1 0 0 ;
+  SIZE 3000 BY 3000 ;
+  SYMMETRY X Y ;
+  #SITE GF018hv5v_mcu_sc7 ;
+
+  OBS
+    LAYER VIA12 ;
+      RECT 0 0 3000 3000 ;
+    LAYER MET1 ;
+      RECT 0 0 3000 3000 ;
+    LAYER MET2 ;
+      RECT 0 0 3000 3000 ;
+    LAYER MET3 ;
+      RECT 0 0 3000 3000 ;
+    LAYER MET4 ;
+      RECT 0 0 3000 3000 ;
+    LAYER MET4 ;
+      RECT 0 0 3000 3000 ;
+  END
+END gf180teststructures
+
+END LIBRARY

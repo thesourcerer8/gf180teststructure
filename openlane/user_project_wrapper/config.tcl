@@ -52,7 +52,7 @@ set ::env(VERILOG_FILES_BLACKBOX) "\
 	$::env(DESIGN_DIR)/../../verilog/rtl/user_proj_example.v"
 
 set ::env(EXTRA_LEFS) "\
-	$::env(DESIGN_DIR)/../../lef/user_proj_example.lef"
+	$::env(DESIGN_DIR)/../../lef/gf180.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
 	$::env(DESIGN_DIR)/../../gds/gf180.gds"
