@@ -55,7 +55,7 @@ set ::env(EXTRA_LEFS) "\
 	$::env(DESIGN_DIR)/../../lef/gf180.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
-	$::env(DESIGN_DIR)/../../gds/gf180.gds"
+	$::env(DESIGN_DIR)/../../gds/gf180_teststructures.gds"
 
 set ::env(RT_MAX_LAYER) {Metal4}
 
