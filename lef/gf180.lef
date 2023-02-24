@@ -24,6 +24,6 @@ MACRO gf180_teststructures
     LAYER MET4 ;
       RECT 0 0 3000 3000 ;
   END
-END gf180teststructures
+END gf180_teststructures
 
 END LIBRARY
