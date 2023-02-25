@@ -59,7 +59,9 @@ jobs:
       
       - name: run flow
         run: |
-          make user_proj_example
+          (cd gf180_teststructures && magic -dnull -noconsole < lef.tcl)
+          (cd gf180_teststructures && magic -dnull -noconsole < mag.tcl)
+          cp gf180_teststructures/gf180_teststructures_flat.mag mag/gf180_teststructures.mag
           make user_project_wrapper
 
       - name: archive openlane runs
