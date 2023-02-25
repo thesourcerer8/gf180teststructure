@@ -31,7 +31,6 @@
 
 module gf180_teststructures #(
 )(
-(* keep *)
 
 );
 
@@ -116,7 +115,8 @@ user_proj_example mprj (
 );
 */
 
-gf180_teststructures myteststructures ();
+(* keep *) gf180_teststructures myteststructures ();
+
 endmodule	// user_project_wrapper
 
 `default_nettype wire
