@@ -71,8 +71,10 @@ jobs:
           name: openlane-runs
           path: |
             /home/runner/work/gf180teststructure/gf180teststructure/openlane/user_proj_example/runs/
-            /home/runner/work/gf180teststructure/gf180teststructure/openlane/user_project_wrapper/runs/
+            /home/runner/work/gf180teststructure/gf180teststructure/openlane/user_project_wrapper/runs/user_project_wrapper/
             /home/runner/work/gf180teststructure/gf180teststructure/gds/
+            /home/runner/work/gf180teststructure/gf180teststructure/gf180_teststructures/
+
 
       - name: run precheck
         run: |
