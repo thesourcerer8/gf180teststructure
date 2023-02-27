@@ -70,10 +70,10 @@ jobs:
         with:
           name: openlane-runs
           path: |
-            /home/runner/work/gf180teststructure/gf180teststructure/openlane/user_proj_example/runs/
-            /home/runner/work/gf180teststructure/gf180teststructure/openlane/user_project_wrapper/runs/user_project_wrapper/
-            /home/runner/work/gf180teststructure/gf180teststructure/gds/
-            /home/runner/work/gf180teststructure/gf180teststructure/gf180_teststructures/
+            ${{ github.workspace }}/openlane/user_proj_example/runs/
+            ${{ github.workspace }}/openlane/user_project_wrapper/runs/user_project_wrapper/
+            ${{ github.workspace }}/gds/
+            ${{ github.workspace }}/gf180_teststructures/
 
 
       - name: run precheck
@@ -87,7 +87,7 @@ jobs:
         with:
           name: precheck-results
           path: |
-            /home/runner/work/gf180teststructure/gf180teststructure/precheck_results/
+            ${{ github.workspace }}/precheck_results/
 
       - name: run tapeout
         if: always()
@@ -106,5 +106,5 @@ jobs:
         with:
           name: caravel-tapeout
           path: |
-            /home/runner/work/gf180teststructure/gf180teststructure/gds/caravel_*.gds
-            /home/runner/work/gf180teststructure/gf180teststructure/signoff/
+            ${{ github.workspace }}/gds/caravel_*.gds
+            ${{ github.workspace }}/signoff/
