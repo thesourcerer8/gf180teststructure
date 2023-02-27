@@ -1,0 +1,48 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO gf180_teststructures
+  CLASS BLOCK ;
+  FOREIGN gf180_teststructures ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 2862.000 BY 1753.120 ;
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 0.000 0.000 0.500 0.500 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 1.500 0.000 2.000 0.500 ;
+    END
+  END vss
+  PIN gpio
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT 3.000 0.000 3.500 0.500 ;
+    END
+  END gpio
+  OBS
+      LAYER Metal1 ;
+        RECT 10.000 200.000 2909.920 1894.340 ;
+      LAYER Metal2 ;
+        RECT 10.000 200.000 2909.920 1894.340 ;
+      LAYER Metal3 ;
+        RECT 10.000 200.000 2909.920 1894.340 ;
+      LAYER Metal4 ;
+        RECT 10.000 200.000 2909.920 1894.340 ;
+      LAYER Metal5 ;
+        RECT 10.000 200.000 2909.920 1894.340 ;
+  END
+END gf180_teststructures
+END LIBRARY
+
